@@ -1,3 +1,4 @@
+/* @flow */
 import React, { PropTypes, Component } from 'react'
 
 export default class Posts extends Component {

@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "webpack-watch": "webpack -w",
-    "webpack-build": "webpack -p",
-    "start": "webpack-dev-server --inline --content-base"
+    "watch": "webpack -w",
+    "build": "webpack -p",
+    "start": "webpack -p; webpack-dev-server --inline --content-base",
+    "flow": "flow"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
@@ -20,6 +21,11 @@
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
+    "eslint": "^3.17.1",
+    "eslint-loader": "^1.6.3",
+    "eslint-plugin-flowtype": "^2.30.4",
+    "eslint-plugin-react": "^6.10.3",
+    "flow-bin": "^0.42.0",
     "webpack": "^2.3.3"
   }
 }
