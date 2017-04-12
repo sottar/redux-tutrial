@@ -8,8 +8,9 @@ import Posts from '../components/Posts'
 class AsyncApp extends Component {
   constructor(props) {
     super(props)
-    this.handleChange = this.handleChange.bind(this)
-    this.handleRefreshClick = this.handleRefreshClick.bind(this)
+    const self = this
+    self.handleChange = this.handleChange.bind(this)
+    self.handleRefreshClick = this.handleRefreshClick.bind(this)
   }
 
   componentDidMount() {
