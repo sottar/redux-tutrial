@@ -6,14 +6,14 @@ export const RECEIVE_POSTS = 'RECEIVE_POSTS'
 export const SELECT_SUBREDDIT = 'SELECT_SUBREDDIT'
 export const INVALIDATE_SUBREDDIT = 'INVALIDATE_SUBREDDIT'
 
-export function selectSubreddit(subreddit) {
+export function selectSubreddit(subreddit: any) {
   return {
     type: SELECT_SUBREDDIT,
     subreddit
   }
 }
 
-export function invalidateSubreddit(subreddit) {
+export function invalidateSubreddit(subreddit: any) {
   return {
     type: INVALIDATE_SUBREDDIT,
     subreddit
@@ -45,7 +45,7 @@ function fetchPosts(subreddit) {
   }
 }
 
-function shouldFetchPosts(state, subreddit) {
+function shouldFetchPosts(state: Object, subreddit: any) {
   const posts = state.postsBySubreddit[subreddit]
   if (!posts) {
     return true
@@ -56,8 +56,8 @@ function shouldFetchPosts(state, subreddit) {
   }
 }
 
-export function fetchPostsIfNeeded(subreddit) {
-  return (dispatch, getState) => {
+export function fetchPostsIfNeeded(subreddit: any) {
+  return (dispatch: any, getState: any) => {
     if (shouldFetchPosts(getState(), subreddit)) {
       return dispatch(fetchPosts(subreddit))
     }

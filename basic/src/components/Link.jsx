@@ -1,7 +1,7 @@
 /* @flow */
 import React, { PropTypes } from 'react'
 
-const Link = ({ active, children, onClick }) => {
+const Link = ({ active, children, onClick }: Object) => {
   if (active) {
     return <span>{children}</span>
   }

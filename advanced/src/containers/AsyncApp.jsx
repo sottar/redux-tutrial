@@ -6,9 +6,9 @@ import Picker from '../components/Picker'
 import Posts from '../components/Posts'
 
 class AsyncApp extends Component {
-  constructor(props) {
+  constructor(props: any) {
     super(props)
-    const self = this
+    const self: any = this
     self.handleChange = this.handleChange.bind(this)
     self.handleRefreshClick = this.handleRefreshClick.bind(this)
   }
