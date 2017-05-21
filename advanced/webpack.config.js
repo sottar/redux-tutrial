@@ -9,7 +9,7 @@ module.exports = [{
     filename: './index.js',
   },
   devServer: {
-    port: 8010
+    port: 8088
   },
   module: {
     loaders: [
